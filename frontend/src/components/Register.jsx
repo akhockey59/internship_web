@@ -13,7 +13,7 @@ const Register = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         
-        axios.post( 'http://localhost:5001/api/users/register', {name, email, password})
+        axios.post( 'https://interns-scholar-backend.onrender.com/api/users/register', {name, email, password})
         .then(result => {
             console.log(result);
             if(result.data === "Already registered"){
