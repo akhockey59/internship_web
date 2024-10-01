@@ -12,7 +12,7 @@ const Login = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         
-        axios.post('http://localhost:5001/api/users/login', { email, password })
+        axios.post('https://interns-scholar-backend.onrender.com/api/users/login', { email, password })
             .then(result => {
                 console.log(result);
 
