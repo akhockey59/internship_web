@@ -21,7 +21,7 @@ const Register = () => {
                 navigate('/login');
             }
             else{
-                alert("Registered successfully! Please Login to proceed.")
+                alert("Challenge have been sent to registered email, click OK to login...")               
                 navigate('/login');
             }
             
